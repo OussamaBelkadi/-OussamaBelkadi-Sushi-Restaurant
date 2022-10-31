@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-DASA</title>
+    <meta name="keyword" content="sushi restaurants - sushi restaurant - sushi roll - sushi rice - sushi near me - cafe sush - what is sushi">
+    <meta name="description" content="retaurant de beau qualité pour le Sushi">
+    <link href="css/Menu.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="IMG/Logoets.png" alt="Le logo du DASA-SUSHI" class="log"></a>
+        
+          <div class="nav container">  
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li> <i class="ri-shopping-cart-fill icon" id="cart-icon"></i></li>
+                
+            </ul>
+               
+            <!-- Cart Product -->
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <div class="cart-content">
+                   <div class="cart-Box">
+                    <img src="IMG/salade3.jpg" alt="image du choix du Menu!" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Garden Deluxe</div>
+                            <div class="cart-price" price="12">$12</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <!-- Remove Cart -->
+                        <i class='bx bx-trash cart-remove'></i>
+                   </div>
+                  
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div id="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <div class="menufok">
+        <h2> DASA-SUSHI MENU</h2>
+    </div>
+    
+</div>
+    <div class="tabbed">
+        <nav class="tnav link-slide swiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slideH" onclick="openMenu(event, 'a')"><a href="#0">TOUS</a></li>
+                <li class="swiper-slideH" onclick="openMenu(event, 'b')"><a href="#0">SALADE</a></li>
+                <li class="swiper-slideH" onclick="openMenu(event, 'c')"><a href="#0">SUSHI</a></li>
+                <li class="swiper-slideH" onclick="openMenu(event, 'd')"><a href="#0">BURGER</a></li>
+                <li class="swiper-slideH" onclick="openMenu(event, 'e')"><a href="#0">COlA</a></li>
+            </ul>
+        </nav>
+    </div>    
+    <!--place de choix du menu-->
+<div class="choix">
+    <section class="Menu sal" id="a">
+        
+        <div class="Menuhm"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/saldaHM.jpg" class="imgm" alt="plat du salde">
+                    <div class="descmn">
+                        <h4 class="product-title">Chiken Cessar</h4>
+                        <h6 class="prixe">12</h6>
+                        <p>des salades pour entrées savoureuse pour vos début de repas.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+                
+                <div class="imgmn">
+                    <img src="IMG/salde1.jpg" class="imgm" alt="plat du salde">
+                    <div class="descmn">
+                        <h4 class="product-title">Garden Deluxe</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>Savourez des plats conçus avec des ingrédients et different choix</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+                <div class="imgmn">
+                    <img src="IMG/Salde2.jpg" class="imgm"alt="plat du salde">
+                    <div class="descmn">
+                        <h4 class="product-title">Greek</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>Une assiette gastronomique pour combler votre faim.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+           
+        </div>
+    </section>
+    <!--Salde-->
+    <section class="Menu" id="b">
+        <div class="ter"></div>
+        <div class="Menuhm" id="S"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/salade3.jpg" class="imgm" alt="plat du salde">
+                    <div class="descmn">
+                        <h4 class="product-title">Tivoll</h4>
+                        <h6 class="prixe">12$</h6>
+                        <p>des salades pour entrées savoureuse pour vos début de repas.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+                
+                <div class="imgmn">
+                    <img src="IMG/salde4.jpg" class="imgm" alt="plat du salde">
+                    <div class="descmn">
+                        <h4 class="product-title">Tivoll</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>Savourez des plats conçus avec des ingrédients et different choix</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+                <div class="imgmn">
+                    <img src="IMG/salde5.jpg" class="imgm" alt="plat du salde">
+                    <div class="descmn">
+                        <h4 class="product-title">Cobb</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>Une assiette gastronomique pour combler votre faim.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+            
+        </div>
+    </section>
+    
+    <!--3choix-->
+    <section class="Menu" id="c">
+        <div class="ter"></div>
+        <div class="Menuhm"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/burger1.jpg" class="imgm" alt="plat du suqhi">
+                    <div class="descmn">
+                        <h4 class="product-title">Mixet</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>des salades pour entrées savoureuse pour vos début de repas.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+
+                <div class="imgmn">
+                    <img src="IMG/burger2.jpg" class="imgm" alt="plat du suqhi">
+                    <div class="descmn">
+                        <h4 class="product-title">Nigiri</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>Savourez des plats conçus avec des ingrédients et different choix</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+                <div class="imgmn">
+                    <img src="IMG/burger3.jpg" class="imgm" alt="Plat de sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Sashmi</h4>
+                        <h6 class="prixe">$12</h6>
+                        <p>Une assiette gastronomique pour combler votre faim.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+           
+        </div>
+    </section>
+    <!--Salde-->
+    <section class="Menu" id="d">
+        <div class="ter"></div>
+        <div class="Menuhm"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/burger4.jpg" class="imgm" alt="plat du sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Big Tasty</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>des salades pour entrées savoureuse pour vos début de repas.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+                
+           
+                <div class="imgmn">
+                    <img src="IMG/biurger5.jpg" class="imgm" alt="plat de sushi">
+                    <div class="descmn">
+                        <h4 class="puduct-title">Maki</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>Savourez des plats conçus avec des ingrédients et different choix</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+                <div class="imgmn">
+                    <img src="IMG/burger6.jpg" class="imgm" alt="Plat de sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Royal</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>Une assiette gastronomique pour combler votre faim.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+           
+        </div>
+    </section>
+
+    <section class="Menu" id="e">
+        <div class="ter"></div>
+        <div class="Menuhm"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/sushi1.jpg" class="imgm" alt="plat du sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Mixet</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>des salades pour entrées savoureuse pour vos début de repas.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+                
+                <div class="imgmn">
+                    <img src="IMG/sushi2.jpg" class="imgm" alt="plat de sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Nigiri</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>Savourez des plats conçus avec des ingrédients et different choix</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+            
+                <div class="imgmn">
+                    <img src="IMG/sushi3.jpg" class="imgm" alt="Plat de sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Sashmi</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>Une assiette gastronomique pour combler votre faim.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+           
+        </div>
+    </section>
+    <!--Salde-->
+    <section class="Menu" id="f">
+        <div class="ter"></div>
+        <div class="Menuhm"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/sushi4.jpg" class="imgm" alt="plat du sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Big Tasty</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>des salades pour entrées savoureuse pour vos début de repas.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>    
+            
+                <div class="imgmn">
+                    <img src="IMG/sushi5.jpg" class="imgm" alt="plat de sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Maki</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>Savourez des plats conçus avec des ingrédients et different choix</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+            
+        
+            
+                
+                <div class="imgmn">
+                    <img src="IMG/sushi6.jpg" class="imgm" alt="Plat de sushi">
+                    <div class="descmn">
+                        <h4 class="product-title">Royal</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <p>Une assiette gastronomique pour combler votre faim.</p>
+                        <div class="button"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+        </div>       
+    </section>
+    <!--Les boissons-->
+    <section class="Menu" id="j">
+        <div class="ter"></div>
+        <div class="Menuhm"> 
+            
+                <div class="imgmn">
+                    <img src="IMG/cola.jpg" class="imgm" alt="jus et boisson">
+                    <div class="descmne">
+                        <h4 class="product-title">Cola</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <div class="buttone"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+                
+        
+            <div class="Box">
+                <div class="imgmn">
+                    <img src="IMG/JusHM.jpg" class="imgm" alt="jus et boisson">
+                    <div class="descmne">
+                        <h4 class="product-title">Jus</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <div class="buttone"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+            </div>
+        
+            <div class="Box">
+                <div class="imgmn">
+                    <img src="IMG/eaux.jpg" class="imgm" alt="jus et boisson">
+                    <div class="descmne">
+                        <h4 class="product-title">Eau</h4>
+                        <h6 class="prixe">12DH</h6>
+                        <div class="buttone"><button class="btnadd">Ajouter au panier</button></div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+</div>   
+    <!--Footer-->
+    <section id="contact">
+        <div class="footer">
+        
+            <div class="main">
+                <div class="list">
+                        <h4 class="per">Apropos</h4>
+                        <div class="pre">     
+                        <p>le restaurent DASA-SUSHI vous attend pour déguster un repas savoureux entre amis ou en famille.</p>
+                        </div>       
+                        <ul class="ul">
+                        <li>06 14 42 85 90</li>
+                        <li>14 Avenue hassan 2 Rabat</li>
+                        </ul>
+                    
+                </div>
+
+                <div class="list">
+                    <h4 class="per">Réserver</h4>
+                        <p class="der">Vous désirez réserver une table pour plusieurs convives? Appelez-nous en cliquant sur le bouton Réserver une table, on s'occupe de vous !</p>
+                        <input type="submit" value="Réserver une table" class="fer">
+                </div>
+
+                <div class="list">
+                    <h4 class="p">Suivez nous sur</h4>	
+                    <div class="social">
+                        <a href="#h"><img src="IMG/socaux.png" class="sociaux"></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <script src="js/main.js"></script> 
+</body>
+</html>

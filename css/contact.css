@@ -1,0 +1,602 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body{
+    height: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+.logo .log {
+    width: 80px;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #221314;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.navbar a:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+
+#menu-icon {
+    color: var(--bg-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+header.sticky {
+    background: var(--bg-color);
+    padding: 10px 18%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+ul {
+    list-style-type: none;
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../IMG/contactbck.jpg);
+    background-size: cover;
+    top: 100px;
+}
+
+.contact .content {
+    padding-top: 100px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFF;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    gap: 240px;
+}
+
+.container .Contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    color: #FFFF;
+}
+
+.container .Contactinfo .Box {
+    position: relative;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+
+}
+
+.container .Contactinfo .Box .text {
+    display: flex;
+    font-size: 20px;
+    color: #FFFF;
+    flex-direction: column;
+    font-weight: 300px;
+    margin-bottom: 40px;
+    line-height: 60px;
+    padding: 20px;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container .Contactinfo .Box .text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFF;
+    text-decoration: underline;
+
+}
+
+.container .Contactinfo .Box .text p {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactForm {
+    width: 450px;
+    height: 450px;
+    padding: 40px;
+    background-color: #FFFF;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #00000;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0px;
+    font-size: 16px;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #D9D9D9;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background: #ff6060;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+}
+#contact{
+    margin-top: 100px;
+    padding-top: 0px;
+    padding-top: -13px;
+    height: 300px;
+    width:  1400px;
+	background: #D9D9D9;
+    margin-bottom: 100px;
+}
+.main{
+    padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    background-color: #D9D9D9;
+}
+.footer{
+	padding-top: 86px;
+	position: relative;
+	bottom: 0px;
+    height: 400px;
+    background-color: #D9D9D9;
+    width: 1400px;
+}
+.list{
+	width: 25%;
+}
+.list h4{
+    
+	font-size: 21px;
+	margin-bottom: 29px;
+    
+}
+.imgbck{
+    position: absolute;
+    padding-left: 550px;
+    padding-right: 440px;
+    margin-top: 0px;
+    padding-top: 0px;
+    bottom: 270px;
+
+}
+.list h4::before{
+	position: absolute;
+	height: 2px;
+	width: 60px;
+	left: 0;
+	bottom: -10px;
+}
+.list input{
+    margin-top: 40px;
+}
+.fer{
+    width: 140px;
+    height: 43px;
+    background: #fff;
+    border: 1px;
+    border-radius: 8px;
+    color: #000;
+}
+.list .social a{
+	height: 100Px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 21px;
+	border-radius: 15px;
+	transition: .3s;
+	margin-right: 10px;
+}
+.per{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    line-height: 50px;
+}
+.p{
+    position: absolute;
+    top: 140px;
+    right: 100px;
+}
+.sociaux{
+    position: absolute;
+    right: 119px;
+    padding-top: 20px;
+    width: 6%;
+    height: 70px;
+    bottom: 135px;
+}
+@media (max-width: 1040px) {
+    
+    body{
+        height:auto;
+    }
+    .contact {
+        width: 100%;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Contactinfo {
+        width: 60px;
+    }
+
+    .text {
+        font-size: medium;
+    }
+    #contact{
+        position: relative;
+        height: 380px;
+        width: 100%;
+        margin: 0px;
+        padding:0px;
+    }
+    .footer{
+        position: relative;
+        bottom: 0px;
+        height: 398px;
+        width: 100%;
+        background-color: #D9D9D9;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .list h4{
+        position: absolute;
+        top: 100PX;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    .imgbck{
+        position: absolute;
+       right: 550px;
+        height: 45px;
+        margin-top: 0px;
+        padding-top: 0px;
+        bottom: 300px;
+    
+    }
+    .pre{
+        position: absolute;
+        width: 200px;
+        font-size: 14px;
+        line-height: normal;
+        bottom: 100px;
+        top: 150px;
+        right: 412px;
+    }
+    .ul{
+        position:absolute;
+        width:220px;
+        font-size: 14px;
+        line-height: normal;
+        bottom: 90px;
+        top: 240px;
+        left: 95px;
+    }
+    .der
+    { 
+        position: absolute;
+        width: 220px;
+        font-size:14px;
+        line-height:normal;
+        bottom: 100px;
+        top: 150px;
+        right:751px;
+    }
+    .list input{
+        margin-top: 20px;
+    }
+    .fer{
+        position: absolute;
+        width: 140px;
+        height: 45px;
+        font-size:14px;
+        line-height:normal;
+        bottom: 100px;
+        top: 220px;
+        right:470px;
+        margin-top: 20px;
+    }
+    .list p{
+       
+        position: absolute;
+       
+    }
+    .list .social a{
+        height: 100Px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 21px;
+        border-radius: 15px;
+        transition: .3s;
+        margin-right: 10px;
+    }
+    .per{
+        position:absolute;
+      top: 10px;
+        line-height: 50px;
+    }
+    
+    .sociaux{
+        position: absolute;
+        right:120px;
+        width: 100px;
+        top:116px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar{
+        display: none;
+    }
+    .contact .content h2 {
+        font-size: 26px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        height: auto;
+        margin-top: -520px;
+    }
+
+    .text {
+        text-align: none;
+        margin-bottom:0px;
+    }
+
+    .text h3 u {
+        font-size: 18px;
+    }
+    .p{
+        position: absolute;
+        left:-9px;
+    }
+    .list p {
+        font-size: 18px;
+        height: auto;
+        line-height: normal;
+        width: 253px;
+    }
+    .contact{
+        position: relative;
+        height: 380px;
+       
+        margin: 0px;
+        padding:0px;
+    }
+    .footer{
+        position: relative;
+        bottom: 0px;
+        height: 300px;
+        width: 100%;
+        background-color: #ff6060;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list{
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 550px;
+        position: relative;
+        height: 300px;
+        padding-bottom: 0%;
+        margin-bottom:0px;
+    }
+    
+    .list h4{
+        position: absolute;
+        top: 100PX;
+        font-size: 20px;
+        bottom: 20px;
+    }
+    .imgbck{
+        position: absolute;
+        padding-left: 400px;
+        height: 45px;
+        margin-top: 0px;
+        padding-top: 0px;
+        bottom: 300px;
+    
+    }
+    .per{
+        position:absolute;
+        top: 10px;
+        line-height: 50px;
+    }
+    .pre{
+        position: absolute;
+        width: 200px;
+        font-size: 14px;
+        line-height: normal;
+        bottom: 10px;
+        top: 170px;
+        right: 270px;
+    }
+    .ul{
+        position:absolute;
+        width:270px;
+        font-size: 14px;
+        line-height: normal;
+        bottom: 90px;
+        top: 280px;
+        left: 0px;
+    }
+    .der
+    { 
+        position: absolute;
+        width: 200px;
+        font-size: 14px;
+        line-height: normal;
+        bottom: 100px;
+        top: 170px;
+        left: 4px;
+    }
+    .fer{
+        position: absolute;
+        width: 90px;
+        height: 35px;
+        font-size:10px;
+        line-height:normal;
+        bottom: 100px;
+        top: 290px;
+        right:390px;
+        left: 8px;
+    }
+    .list p{
+       
+        position: absolute;
+       
+    }
+    .list .social a{
+        height: 100Px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 21px;
+        border-radius: 15px;
+        transition: .3s;
+        margin-right: 10px;
+    }
+    
+    
+    .sociaux{
+        position: absolute;
+        right:120px;
+        width: 80px;
+        height: 40px;
+        top: 130px;
+        left: 8px;
+    }
+}
